@@ -48,9 +48,9 @@ class NextcloudCalendarSkill(MycroftSkill):
         try:
             config = self.config_core.get("NextcloudCalendarSkill", {})
             if not config == {}:
-                server_url = str(config.get("server_url"))                      # url to nextcloud server
-                user = str(config.get("user"))                                  # nextcloud username
-                password = str(config.get("password"))                          # nextcloud password
+                server_url = str(config.get("https://192.168.11.4/nextcloud"))                      # url to nextcloud server
+                user = str(config.get("Dale Lewis"))                                  # nextcloud username
+                password = str(config.get("service!!"))                          # nextcloud password
 
             else:
                 server_url = str(self.settings.get("server_url"))
